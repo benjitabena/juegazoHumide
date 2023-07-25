@@ -1,4 +1,7 @@
-let matrix = [
+let bootstrap = require("bootstrap");
+var Losgrids = document.querySelector(".grid-container");
+
+/*let matrix = [
     [01,02,03,04,05,06,07,08,09,10 ] , 
     [11,12,13,14,15,16,17,18,19,20 ] ,
     [21,22,23,24,25,26,27,28,29,30 ] ,
@@ -16,4 +19,19 @@ let table = document.getElementById("matrixTable");
 for (let i = 0; i < matrix.length; i++) {
     const element = array[i];
     
+}*/
+
+
+
+// Crear la grilla de 10x10 con divs
+for (let f = 0; f < 10; f++) {
+    for (let c = 0; c < 10; c++) {
+        // Crear un nuevo div para cada celda de la grilla
+        let div = document.createElement("div");
+        div.className = "grid-item";
+        div.textContent = f + "x" + c; // Puedes personalizar el contenido aquí
+
+        // Agregar el div al contenedor de la grilla
+        Losgrids.appendChild(div);
+    }
 }
