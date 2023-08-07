@@ -1,0 +1,66 @@
+grid-container {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    gap: 2px;
+    width: 400px;
+    margin: auto;
+}
+
+.grid-item {
+    background-color: white;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.grid-item:hover {
+    background-color: lightgray;
+}
+
+/* Agrega este estilo para la clase "colored" */
+.grid-item.colored {
+    background-color: orange; /* Cambia este color según tu preferencia */
+}
+
+
+.circle-button {
+    display: inline-block;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    width: 100px;
+    height: 100px;
+    background-color: #84d474;
+    border-radius: 50%; /* Hace que el elemento sea un círculo */
+    text-align: center;
+    cursor: pointer;
+}
+
+/* Estilo para el contenedor de la grilla */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(10, 50px); 
+    grid-template-rows: repeat(10, 50px);
+    gap: 0px; /* Espacio entre los divs ekisdeXDXDXDXDXDDDDDDDDDDDXD*/
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.timer {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+}
+
+
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
