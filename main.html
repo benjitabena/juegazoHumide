@@ -1,79 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="stylesheet" href="style.css">
     <title>Grillas del juegazo</title>
-    <style>
-
-.circle-button {
-            display: inline-block;
-            position: absolute;
-            top: 50px;
-            left: 50px;
-            width: 100px;
-            height: 100px;
-            background-color: #84d474;
-            border-radius: 50%; /* Hace que el elemento sea un círculo */
-            text-align: center;
-            cursor: pointer;
-        }
-
-        /* Estilo para el contenedor de la grilla */
-        .grid-container {
-            display: grid;
-            grid-template-columns: repeat(10, 50px); 
-            grid-template-rows: repeat(10, 50px);
-            gap: 0px; /* Espacio entre los divs ekisdeXDXDXDXDXDDDDDDDDDDDXD*/
-        }
-
-        /* Estos son los estilos de la grilla */
-        .grid-item {
-            background-color: rgb(255, 255, 255); /* Color de fondo de cada div*/
-            text-align: center;
-            line-height: 50px; /* Centrar verticalmente el contenido en cada div */
-            border: 1px solid black; /* Borde negro entre los divs */
-        }
-
-body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-        }
-
-        .timer {
-            font-size: 36px;
-            font-weight: bold;
-            color: #333;
-        }
-
-
-
-        body {
-            margin: 0;
-            height: 100vh;
-            display: grid;
-            place-items: center;
-        }
-
-        .grid-container {
-            display: grid;
-            grid-template-columns: repeat(10, 50px); /* Cambia el número de columnas según tus necesidades */
-            gap: 0px; /* Espacio entre los divs */
-            padding: 20px;
-        }
-
-        .grid-item {
-            width: 50px;
-            height: 50px;
-        }
-
-    </style>
 </head>
 <body>
 
-<a href="#" class="circle-button"></a>
 
+<a href="#" class="circle-button"></a>
 <div class="timer" id="timer">00:00:00</div>
 
 <script>
+
+
     // Función para formatear el tiempo en formato HH:mm:ss
     function formatTime(seconds) {
         const hours = Math.floor(seconds / 3600);
@@ -207,7 +146,7 @@ body {
         <div class="color1"></div>
         <div class="color2"></div>
         <div class="circle"></div>
-
+        
     </div>
 </body>
 </html>
